@@ -1,0 +1,37 @@
+.form {
+  &__select,
+  &__input {
+    min-height: 3.5rem;
+    padding: .4rem .6rem;
+    background: transparent;
+    font-family: inherit;
+    width: 100%;
+    border: 1px solid #b9bec1;
+  }
+
+  &__input--number {
+    position:relative;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          width: 50%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          border-left: 1px solid silver;
+          opacity: .5;
+          background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;
+    }
+  }
+
+  &__label {
+    display: block;
+    text-transform: uppercase;
+    color: $codegray;
+    font-weight: 600;
+    color: $codegray;
+    margin-bottom: .5rem;
+  }
+}
