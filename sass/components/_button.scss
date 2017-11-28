@@ -1,0 +1,41 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+  padding: 2rem 4rem;
+  text-transform: uppercase;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  }
+
+  &--primary {
+    background: $codegray;
+    color: $white;
+    border: 1px solid  $codegray;
+  }
+
+  &--secondary {
+    background: $white;
+    color: $codegray;
+    border: 1px solid $gray;
+  }
+
+  &--outline {
+    border: 3px solid #dac14a;
+  }
+
+  &--fullwidth {
+    width: 100%;
+  }
+
+  &--withsign {
+    &::before {
+      font: normal normal normal 14px/1 FontAwesome;
+      display: inline-block;
+      font-size: 1.2rem;
+      content: '\f13b';
+      margin-right:3px;
+    }
+  }
+}

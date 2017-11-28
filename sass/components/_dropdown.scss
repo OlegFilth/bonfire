@@ -1,0 +1,37 @@
+.dropdown {
+  & {
+    position: relative;
+    overflow: hidden;
+    transition: .4s ease;
+  }
+
+  &:hover {
+    overflow: visible;
+  }
+
+  &__category {
+    &::after {
+      font: normal normal normal 14px/1 FontAwesome;
+      content: "\f0d7";
+      display: inline-block;
+      margin-left: .3rem;
+    }
+  }
+  
+  &__content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    transition: .4s ease;
+  }
+
+  &__list-item {
+    list-style-type: none;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 1rem 1.5rem 1rem 0;
+  }
+}
