@@ -1,9 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.4;
     font-size:1.3rem;
-    color: #555;
+    color: $gray;
 }
 
 .paragraph {
@@ -28,6 +28,7 @@ body {
   text-transform: capitalize;
   color: $codegray;
   font-size: 2.6rem;
+  font-weight: 500;
 }
 
 .link-primary {
@@ -43,4 +44,8 @@ body {
 .link-secondary {
   text-decoration:none;
   color: $gray;
+}
+
+.text-info {
+  color: $cadetblue;
 }

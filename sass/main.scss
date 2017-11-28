@@ -7,9 +7,14 @@
 @import "base/typography.scss";
 @import "base/utilites.scss";
 
-@import "components/star-rating.scss";
-@import "components/review-box.scss";
+@import "components/breadcrumb";
+@import "components/button";
+@import "components/dropdown";
 @import "components/form.scss";
+@import "components/gallery";
+@import "components/navigation";
+@import "components/review-box.scss";
+@import "components/star-rating.scss";
 
 @import "layout/grid.scss";
 
