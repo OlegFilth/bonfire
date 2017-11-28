@@ -1,0 +1,38 @@
+.gallery {
+  &__current {
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__preview-box {
+    display: flex;
+    
+  }
+
+  &__preview{
+    flex: 0 1 calc(100%/4);
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+    
+    &:not(&--active) {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($codegray, .7);
+      }
+    }
+  }
+}
