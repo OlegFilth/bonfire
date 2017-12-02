@@ -4,7 +4,7 @@
   &:visited {
   padding: 2rem 4rem;
   text-transform: uppercase;
-  border: none;
+  border: .1rem solid transparent;
   font-size: 1rem;
   font-weight: bold;
   }
@@ -12,17 +12,16 @@
   &--primary {
     background: $codegray;
     color: $white;
-    border: 1px solid  $codegray;
   }
 
   &--secondary {
     background: $white;
     color: $codegray;
-    border: 1px solid $gray;
+    border-color: $gray;
   }
 
   &--outline {
-    border: 3px solid #dac14a;
+    border: .3rem solid #dac14a;
   }
 
   &--fullwidth {
@@ -31,11 +30,9 @@
 
   &--withsign {
     &::before {
-      font: normal normal normal 14px/1 FontAwesome;
-      display: inline-block;
+      @include special-sign($html5);
       font-size: 1.2rem;
-      content: '\f13b';
-      margin-right:3px;
+      margin-right: .3rem;
     }
   }
 }

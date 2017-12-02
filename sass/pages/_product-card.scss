@@ -5,7 +5,7 @@
     margin-right: 10px;
   }
   .btn--withsign::before {
-    content: '\f08a';
+    content: $heart-o;
   }
 
   &__price {
@@ -16,5 +16,4 @@
   &__info-box {
     color: $codegray;
   }
-
 }

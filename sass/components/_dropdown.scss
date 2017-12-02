@@ -11,9 +11,7 @@
 
   &__category {
     &::after {
-      font: normal normal normal 14px/1 FontAwesome;
-      content: "\f0d7";
-      display: inline-block;
+      @include special-sign($angle-down);
       margin-left: .3rem;
     }
   }
