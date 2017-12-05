@@ -1,35 +1,37 @@
 .dropdown {
-  & {
-    position: relative;
-    overflow: hidden;
-    transition: .4s ease;
-  }
-
-  &:hover {
-    overflow: visible;
-  }
+  position: relative;
 
   &__category {
     &::after {
       @include special-sign($angle-down);
-      margin-left: .3rem;
+      margin-left: 3px;
     }
   }
   
   &__content {
     position: absolute;
-    top: 100%;
+    top:100%;
     left: 0;
     background: white;
-    transition: .4s ease;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+  }
+
+  &:hover  &__content {
+    max-height: 260px;
+    opacity: 1;
   }
 
   &__list-item {
     list-style-type: none;
   }
 
+
+
   &__link {
     display: inline-block;
-    padding: 1rem 1.5rem 1rem 0;
+    width:100%;
   }
 }

@@ -2,11 +2,12 @@
   &,
   &:link,
   &:visited {
-  padding: 2rem 4rem;
+  padding: 20px 36px;
   text-transform: uppercase;
-  border: .1rem solid transparent;
-  font-size: 1rem;
+  border: 1px solid transparent;
+  font-size: 10px;
   font-weight: bold;
+  white-space: nowrap;
   }
 
   &--primary {
@@ -21,7 +22,7 @@
   }
 
   &--outline {
-    border: .3rem solid #dac14a;
+    border: 3px solid #dac14a;
   }
 
   &--fullwidth {
@@ -31,8 +32,8 @@
   &--withsign {
     &::before {
       @include special-sign($html5);
-      font-size: 1.2rem;
-      margin-right: .3rem;
+      font-size: 12px;
+      margin-right: 3px;
     }
   }
 }
